@@ -1,283 +1,322 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Adam</title>
 
-  <title>Portfolio de Adam Gallas</title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-<!-- Header  -->
-
-  <header id="header">
-    <a href="#header" class="name-link">Adam Gallas</a>
-    <nav class="nav-links">
-      <a href="#services">MES SERVICES</a>
-      <a href="#competences">MES COMPÉTENCES</a>
-      <a href="#bts-sio">BTS SIO</a>
-      <a href="#situations-pro">SITUATIONS PRO</a>
-      <a href="#projet">PROJET</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
-  </header>
-
-  <!-- Fin Header  -->
-
-  <!-- Présentation  -->
-
-  <section id="presentation">
-    <h1>Adam Gallas</h1>
-    <strong><p>Étudiant passionné par les nouvelles technologies.</p></strong>
-    <div class="info-complementaire">
-      <p>Je suis actuellement étudiant en deuxième année de BTS SIO, où j'ai acquis des compétences en programmation, administration de systèmes, gestion de projets et bien d'autres domaines. Mon objectif est de poursuivre ma carrière dans le développement web et les technologies de l'information.</p>
-      <p>En dehors de mes études, je m'investis dans diverses activités extrascolaires et projets personnels, qui m'aident à renforcer mes compétences et à rester à jour avec les dernières tendances technologiques.</p>
-    </div>
-    <a href="#contact" class="btn-contact">Contact</a>
-  </section>
-
- <!-- Fin Présentation  -->
-
-  <!-- Compétence  -->
-
-  <div id="skills" class="skills">
-    <div class="contenaire">
-      <div class="skill-header">
-        <h2 class="section-title">Mes Compétence</h2>
-      </div>
-      <div class="skill-columns">
-        <div class="skill-column">
-          <div class="skill">
-            <div class="skill-name">HTML</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="html-bar" data-percentage="50%">
     
-              </div>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Adam Gallas</a>
+        <div class='bx bx-menu' id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#BTSSIO">BTS SIO</a>
+            <a href="#about">A Propos</a>
+            <a href="#PRO">Professionnel</a>
+            <a href="#veille">Ma Veille</a>
+            <a href="#services">Mes Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Bonjour, Je m'appelle</h3>
+            <h1>Adam </h1>
+            <h3>Et je suis <span class="multiple-text"></span> </h3>
+            <p>Je suis actuellement étudiant en BTS SIO option SLAM et je souhaite me spécialiser dans le domaine du support. Je fais du développement, de la gestion bases de données SQL ainsi que du support Informatique.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/adam_gls/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
             </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">CSS</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="css-bar" data-percentage="60%">
-    
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">JavaScript</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="javascript-bar" data-percentage="80%">
-         
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">SQL</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="html-bar" data-percentage="50%">
-        
-              </div>
-            </div>
-          </div>
+            <a href="" class="btn" target="_blank"> <download></download>Télécharger mon CV</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="" class="btn" target="_blank"><download></download>Tableau de synthèse</a>
         </div>
-        <div class="skill-column">
-          <div class="skill">
-            <div class="skill-name">Anglais</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="ang-bar" data-percentage="80%">
-              
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">Espagnol</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="esp-bar" data-percentage="60%">
-          
-              </div>
-             
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">PHP</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="por-bar" data-percentage="90%">
-             
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">Pack Office</div>
-            <div class="skill-level">
-              <div class="skill-bar" id="html-bar" data-percentage="50%">
-               
-              </div>
-            </div>
-          </div>
+
+        <div class="home-img">
+            <img src="images/moi1.png" alt="">
         </div>
-      </div>
-    </div>
-  </div>
-<!-- Fin Compétence  -->
+    </section>
 
-<!-- Services-->
-<div id="services" class="services">
-  <div class="contenaire">
-      <div class="services-header">
-          <h2 class="section-title">Mes Services</h2>
-      </div>
-      <div class="grid">
-          <div class="grid-item">
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Intégration Web</h3>
-                  </div>
-              </div>
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Conception grapgique & Webdesign</h3>
-                      
-                  </div>
-              </div>
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Référencement Naturel</h3>
-                  </div>
-              </div>
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M171.73,232.813A5.381,5.381,0,0,0,176.7,229.5,48.081,48.081,0,0,1,191.6,204.244c1.243-.828,1.657-2.484,1.657-4.141a4.22,4.22,0,0,0-2.071-3.312L74.429,128.473,148.958,85a9.941,9.941,0,0,0,4.968-8.281,9.108,9.108,0,0,0-4.968-8.281L126.6,55.6a9.748,9.748,0,0,0-9.523,0l-100.2,57.966a9.943,9.943,0,0,0-4.969,8.281V236.954a9.109,9.109,0,0,0,4.969,8.281L39.235,258.07a8.829,8.829,0,0,0,4.968,1.242,9.4,9.4,0,0,0,6.625-2.484,10.8,10.8,0,0,0,2.9-7.039V164.5L169.66,232.4A4.5,4.5,0,0,0,171.73,232.813ZM323.272,377.73a12.478,12.478,0,0,0-4.969,1.242l-74.528,43.062V287.882c0-2.9-2.9-5.8-6.211-4.555a53.036,53.036,0,0,1-28.984.414,4.86,4.86,0,0,0-6.21,4.555V421.619l-74.529-43.061a8.83,8.83,0,0,0-4.969-1.242,9.631,9.631,0,0,0-9.523,9.523v26.085a9.107,9.107,0,0,0,4.969,8.281l100.2,57.553A8.829,8.829,0,0,0,223.486,480a11.027,11.027,0,0,0,4.969-1.242l100.2-57.553a9.941,9.941,0,0,0,4.968-8.281V386.839C332.8,382.285,328.24,377.73,323.272,377.73ZM286.007,78a23,23,0,1,0-23-23A23,23,0,0,0,286.007,78Zm63.627-10.086a23,23,0,1,0,23,23A23,23,0,0,0,349.634,67.914ZM412.816,151.6a23,23,0,1,0-23-23A23,23,0,0,0,412.816,151.6Zm-63.182-9.2a23,23,0,1,0,23,23A23,23,0,0,0,349.634,142.4Zm-63.627,83.244a23,23,0,1,0-23-23A23,23,0,0,0,286.007,225.648Zm-62.074,36.358a23,23,0,1,0-23-23A23,23,0,0,0,223.933,262.006Zm188.883-82.358a23,23,0,1,0,23,23A23,23,0,0,0,412.816,179.648Zm0,72.272a23,23,0,1,0,23,23A23,23,0,0,0,412.816,251.92Z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Sofware</h3>
-                     
-                  </div>
-              </div>
+    <!-- BTS section design -->
+    <section class="BTSSIO" id="BTSSIO">
+        <div class="container">
+            <h2 class="title">BTS<span> SIO</span></h2>
+            <div class="left-block">
+              <h1 class="title">Option SISR</h1>
+              <h3>
+                L’option Solution d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.
+                Les techniciens supérieurs en informatique option SISR, peuvent accéder aux métiers de :
+              <ul style="padding-top: 20px;">
+                <li>Administrateur systèmes et réseaux</li>
+                <li>Informaticien support et déploiement</li>
+                <li>Pilote d’exploitation</li>
+                <li>Support systèmes et réseaux</li>
+                <li>Technicien d’infrastructure</li>
+                <li>Technicien de production</li>
+                <li>Technicien micro et réseaux</li>
+            </ul>
+            </h3>
+            </div>
+            <div class="right-block">
+              <h1 class="title">Option SLAM</h1>
+              <h3>L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).
+                Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de :               
+                <ul style="padding-top: 20px;"> 
+                <li>Développeur d’applications informatiques
+                <li>Développeur informatique
+                <li>Analyste d’applications ou d’études
+                <li>Analyste programmeur
+                <li>Programmeur analyste
+                <li>Programmeur d’applications
+                <li>Responsable des services applicatifs
+                <li>Technicien d’études informatiques
+             </ul>            
+            </h3>
+            </div>
           </div>
-          <div class="grid-item">
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 48C141.1 48 48 141.1 48 256v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V256C0 114.6 114.6 0 256 0S512 114.6 512 256V400.1c0 48.6-39.4 88-88.1 88L313.6 488c-8.3 14.3-23.8 24-41.6 24H240c-26.5 0-48-21.5-48-48s21.5-48 48-48h32c17.8 0 33.3 9.7 41.6 24l110.4 .1c22.1 0 40-17.9 40-40V256c0-114.9-93.1-208-208-208zM144 208h16c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H144c-35.3 0-64-28.7-64-64V272c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64v48c0 35.3-28.7 64-64 64H352c-17.7 0-32-14.3-32-32V240c0-17.7 14.3-32 32-32h16z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Support Informatique</h3>
-                     
-                  </div>
-              </div>
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 80c0-26.5 21.5-48 48-48h64c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-8v40H464c30.9 0 56 25.1 56 56v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H464c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-4.4-3.6-8-8-8H312v40h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H256c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V280H112c-4.4 0-8 3.6-8 8v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-30.9 25.1-56 56-56H264V192h-8c-26.5 0-48-21.5-48-48V80z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Gestion d'un parc Informatique </h3>
-                      
-                  </div>
-              </div>
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Social</h3>
-                    
-                  </div>
-              </div>
-              <div class="service">
-                  <div class="service__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z"/></svg>
-                  </div>
-                  <div class="services_content">
-                      <h3>Hardware</h3>
-                     
-                  </div>
-              </div>
+    </section>
+
+     
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/moi2.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">A propos<span> de moi</span></h2>
+            <h3>Etudiant, Apprenti développeur, Chef de Projet de Serveur</h3>
+            <p>Je m'appelle Adam, j'ai 21 ans, passionné d'informatique et de jeux vidéo depuis toujours. Mon cursus dans l'informatique a commencé a mon stage de 3ème où j'ai produit un site internet pour une entreprise de revente de vêtements. Durant ce stage j'ai compris que je voulais travailler dans l'informatique. Dans quel secteur ? Je ne le savais pas encore. Je me suis donc dirigé vers un Bac S option ISN (Informatique et Sciences du Numérique). Après ce bac je me suis orienté vers une licence Mathématique Informatique. Ce cursus étant trop porté sur les mathématiques et pas assez professionnalisant j'ai décidé de me réoriente en BTS SIO. J'en suis maintenant là. 
+            </p>
+        </div>
+    </section>
+
+       <!-- PRO section design -->
+    <section class="PRO" id="PRO">
+        <div class="container">
+            <h2 class="title"><span> Pro</span></h2>
+            <div class="left-block">
+              <h1 class="title">Soukounian</h1>
+              <h3>
+                L’option Solution d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.
+                Les techniciens supérieurs en informatique option SISR, peuvent accéder aux métiers de :<br><br>
+                <h5>Mes missions:</h5>
+              <ul style="padding-top: 20px;">
+                <li>Administrateur systèmes et réseaux</li>
+                <li>Informaticien support et déploiement</li>
+                <li>Pilote d’exploitation</li>
+                <li>Support systèmes et réseaux</li>
+                <li>Technicien d’infrastructure</li>
+                <li>Technicien de production</li>
+                <li>Technicien micro et réseaux</li>
+            </ul>
+            </h3>
+            </div>
+            <div class="right-block">
+              <h1 class="title">Banque de France</h1>
+              <h3>L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).
+                Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de :<br><br>
+                <h5>Mes missions:</h5>           
+                <ul style="padding-top: 20px;"> 
+                <li>Développeur d’applications informatiques
+                <li>Développeur informatique
+                <li>Analyste d’applications ou d’études
+                <li>Analyste programmeur
+                <li>Programmeur analyste
+                <li>Programmeur d’applications
+                <li>Responsable des services applicatifs
+                <li>Technicien d’études informatiques
+             </ul>            
+            </h3>
+            </div>
           </div>
-      </div>
-   </div>   
-</div>
+    </section>
 
-<!-- Fin Service-->
+     <!-- Veille section design -->
+     <section class="veille" id="veille">
+        <div class="veille-img">
+            <img src="images/IA.png" alt="">
+        </div>
 
-<!-- SIO -->
-
-<div id="bts-sio" class="bts-sio">
-  <div class="contenaire">
-    <div class="bts-header">
-      <h2 class="section-title">BTS SIO</h2>
-      <p>
-        Le BTS Services Informatiques aux Organisations (SIO) est un diplôme de niveau III (Bac +2) qui forme les étudiants aux métiers de l'informatique dans deux options : SLAM et SISR.
-      </p>
-    </div>
-    <div class="options-columns">
-      <div class="option-column">
-        <h3>SLAM</h3>
-        <p>
-          L'option Solutions Logicielles et Applications Métiers (SLAM) forme les étudiants à la conception, au développement et à la maintenance d'applications et de solutions logicielles.
-        </p>
-      </div>
-      <div class="option-column">
-        <h3>SISR</h3>
-        <p>
-          L'option Solutions d'Infrastructure, Systèmes et Réseaux (SISR) forme les étudiants à la mise en place, à la gestion et à la maintenance des infrastructures, des systèmes et des réseaux informatiques.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Fin SIO-->
-
-<!-- PRO -->
-
-<section id="pro">
-  <h2>Expériences professionnelles</h2>
-  <div class="entreprise-container">
-    <div class="entreprise">
-      <div class="logo-container">
-        <img src="sk.png" alt="Logo Soukounian" />
-      </div>
-      <h3>Soukounian</h3>
-      <p>
-        Soukounian est une entreprise de développement web spécialisée dans la création de sites internet et d'applications web.
-      </p>
-      <ul>
-        <li>Mission 1: Développement d'un site e-commerce</li>
-        <li>Mission 2: Maintenance d'un site institutionnel</li>
-        <li>Mission 3: Création d'une application mobile</li>
-        <li>Mission 4: Optimisation du référencement SEO</li>
-      </ul>
-    </div>
-    <div class="entreprise">
-      <div class="logo-container">
-        <img src="bdf.png" alt="Logo Banque de France" />
-      </div>
-      <h3>La Banque de France</h3>
-      <p>
-        La Banque de France est l'institution monétaire nationale de la France.
-      </p>
-      <ul>
-        <li>Mission 1: Développement d'un intranet</li>
-        <li>Mission 2: Maintenance des systèmes internes</li>
-        <li>Mission 3: Gestion des incidents techniques</li>
-        <li>Mission 4: Formation des utilisateurs</li>
-      </ul>
-    </div>
-  </div>
-</section>
+        <div class="about-content">
+            <h2 class="heading">Veille<span> Technologique</span></h2>
+            <h3>Qu'est-ce qu'une veille technologique</h3>
+            <p>La veille technologique est un processus de surveillance et d'analyse des tendances et des avancées technologiques dans un domaine spécifique. Elle consiste à collecter des informations provenant de sources diverses telles que des sites web spécialisés, des publications scientifiques, des brevets, des événements professionnels, des forums de discussion, des réseaux sociaux, etc. Pour la veille techologique, j'ai décidé de traiter sur le sujet de l'IA, ma thématique est : La place de l'intelligence artificielle dans notre société.
+                Afin de répondre à cette thématique ma veille se repose sur 2 différents thémes :</p>
+            <p><strong>Thème 1 : Voitures autonomes : </strong></p>
+                <ul>
+                    <li>Tesla est en train de développer une technologie de conduite autonome de niveau 5, qui permettra aux voitures de se conduire elles-mêmes dans toutes les situations. Cette technologie est basée sur l'IA et utilise des capteurs, des caméras et des radars pour détecter les obstacles et naviguer dans leur environnement. (Source : journaux)</li>
+                    <li>Waymo lance un service de taxi autonome à Phoenix : Waymo, filiale d'Alphabet (maison mère de Google), a lancé un service de taxi autonome à Phoenix, en Arizona. Les voitures utilisées dans ce service sont entièrement autonomes et n'ont pas de conducteur de secours. Les clients peuvent réserver une voiture via une application mobile et se rendre à leur destination sans avoir à conduire eux-mêmes. (Source : CNET)</li>
+                    <li>Uber travaille sur une technologie de conduite autonome : Uber travaille sur une technologie de conduite autonome depuis plusieurs années. Bien que la société ait connu des revers en matière de sécurité, elle continue de travailler sur cette technologie. Uber a également signé un accord avec Volvo pour développer des voitures autonomes. (Source : Uber, journaux, CNET)</li>
+                    <li>Les réglementations en matière de voitures autonomes évoluent rapidement, car de plus en plus de pays et d'États cherchent à intégrer ces technologies sur leurs routes. Les réglementations portent notamment sur la sécurité, la responsabilité et la propriété intellectuelle. (Source : TechCrunch, ONUDI, NHTSA)</li>
+                </ul>
+            <p><strong>Thème 2 : IA dans les soins de santé :</strong></p>
+                <ul>
+                    <li>L'IA peut aider à diagnostiquer les maladies : L'IA peut aider les professionnels de la santé à diagnostiquer plus rapidement et avec plus de précision des maladies telles que le cancer, l'Alzheimer et la maladie de Parkinson. Les modèles d'IA peuvent analyser des milliers d'images et de données pour détecter des anomalies et aider les médecins à prendre des décisions éclairées. (Source : Nature)</li>
+                    <li>Les robots chirurgicaux utilisent l'IA pour améliorer les résultats : Les robots chirurgicaux utilisent l'IA pour améliorer les résultats des interventions chirurgicales. Les robots peuvent détecter des anomalies dans les images en temps réel et aider les chirurgiens à opérer avec plus de précision. (Source : The Lancet Oncology)</li>
+                    <li>Les chatbots peuvent aider les patients à se connecter aux services de santé : Les chatbots utilisent l'IA pour répondre aux questions des patients et les orienter vers les services de santé appropriés. Les chatbots peuvent également aider les patients à surveiller leur santé et à suivre leur traitement. (Source : Forbes)</li>
+                    <li>Les données de santé sont de plus en plus utilisées pour améliorer les soins. Les modèles d'IA peuvent analyser de grandes quantités de données pour aider les professionnels de la santé à identifier les tendances et à améliorer les traitements. (Source : OMS) </li>
+                    <li>Les réglementations portent notamment sur la sécurité, la confidentialité des données, l'éthique et la responsabilité en matière d'utilisation de l'IA dans les soins de santé. Des organismes tels que la FDA aux États-Unis et l'EMA en Europe ont élaboré des directives pour encadrer l'utilisation de l'IA dans les soins de santé. En outre, les gouvernements et les organisations de santé travaillent également sur des réglementations visant à garantir l'équité et l'accessibilité des soins de santé basés sur l'IA. L'objectif est de s'assurer que l'IA ne creuse pas les inégalités en matière de santé et que tous les patients, quels que soient leur lieu de résidence, leur origine ethnique ou leur situation économique, ont accès à des soins de qualité. (Source : OCDE)</li>
+                </ul>
+        </div>
+    </section>
 
 
-<!-- Fin PRO-->
-  <script src="scripts.js"></script>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Mes <span>services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Intégration Web</h3>
+                <p>Développement front de site Internet en code ou avec des application type Wordpress.<br><br></p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx  bx-search-alt-2'></i>
+                <h3>Référencement Naturel</h3>
+                <p>Référencement naturel proposé par les développeurs, permettant grace à des mots clé de booster le référencement.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-laptop'></i>
+                <h3>Gestion de Parc</h3>
+                <p>Gestion physique donc mise à jour et assistance d'un parc informatique: imprimante, écrans, laptop.<br><br></p>
+            </div>
+        </div>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-support'></i>
+                <h3>Support Informatique</h3>
+                <p>Mise a disposition d'un service téléphonique permettant d'aider les utilisateurs grace àa la prise en main à distance.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>Software</h3>
+                <p>Gestion et support d'applications ou problème systèmes.<br><br></p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-chip'></i>
+                <h3>Hardware</h3>
+                <p>Gestion et support de materiél physique, imprimante, ordinateur, téléphone, écrans.<br><br></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Mes <span>Projets</span></h2>
+
+        <div class="portfolio-container">
+            
+
+            <div class="portfolio-box">
+                <img src="images/Instagram.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Instagram</h4>
+                    <p>Page Instagram de Soukounian</p>
+                    <a href="https://www.instagram.com/soukouniandotcom/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/wordpress.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Site Internet</h4>
+                    <p>Site internet de l'entreprise Soukounian</p>
+                    <a href="https://soukounian.fr/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/html_css.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Mon Portfolio</h4>
+                    <p>Développement front de mon portfolio </p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/imgpyth.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Detec'malie</h4>
+                    <p>Application de detection d'anomalies</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/emsca_network.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>EMSCA Network</h4>
+                    <p>Blog de notre Etablissement</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/quiz.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>EMSCA Quiz</h4>
+                    <p>Un quiz sur les langages de programmations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Me<span> Contacter</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text"  placeholder="Nom Complet">
+                <input type="email"  placeholder="Adresse Mail">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Numéro de Téléphone">
+                <input type="text" placeholder="Sujet de l'Email">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Votre Message"></textarea>
+            <input type="submit" value="Envoyer" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Adam | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
