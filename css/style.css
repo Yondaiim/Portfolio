@@ -241,11 +241,45 @@ span {
   }
   /* Fin BTSSIO */
  
+  /* About */
+.about {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img {
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+/* Fin about */
 
   /* PRO */
   h5{
     color: var(--main-color);
     font-size: 24px;
+    text-align: center;
 }
 
   .PRO {
@@ -313,6 +347,7 @@ span {
   .PRO ul {
     list-style: disc;
     margin-left: 30px;
+    font-size: 20px;
   }
   
   .PRO li {
@@ -328,7 +363,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 80px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
   }
   
   .veille .veille-img {
@@ -395,44 +430,13 @@ span {
 
   /* Fin veille */
 
-  /* About */
-.about {
-    display: flex;
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
+  
 
-.about-img img {
-    width: 35vw;
-    animation: floatImage 4s ease-in-out infinite;
-}
-
-.heading {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
-}
-
-.about-content h3 {
-    font-size: 2.6rem;
-}
-
-.about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-/* Fin about */
-
-/* Service */
+ /* Service */
 .services {
     min-height: auto;
     padding-bottom: 10rem;
+    background-color: var(--second-bg-color);
 }
 
 .services h2 {
@@ -450,7 +454,7 @@ span {
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -480,7 +484,7 @@ span {
 
 /* Portfolio */
 .portfolio {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     min-height: auto;
     padding-bottom: 10rem;
 }
@@ -502,6 +506,7 @@ span {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    height: 350px;
 }
 
 .portfolio-box img {
@@ -563,6 +568,7 @@ span {
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
+    background-color: var(--second-bg-color);
 }
 
 .contact h2 {
@@ -588,7 +594,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -616,7 +622,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
