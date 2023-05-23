@@ -464,6 +464,7 @@ span {
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    height: 300px;
 }
 
 .services-container .services-box:hover {
