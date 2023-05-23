@@ -15,7 +15,7 @@
     --bg-color: #161B22;
     --second-bg-color: #0D1117;
     --text-color: #fff;
-    --main-color: rgb(224, 150, 39);
+    --main-color: rgb(255,140,0);
 }
 
 *::selection {
@@ -428,6 +428,10 @@ span {
     margin-bottom: 10px;
   }
 
+  strong {
+    color: var(--main-color);
+  }
+
   /* Fin veille */
 
   
@@ -622,7 +626,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 
 .footer-text p {
