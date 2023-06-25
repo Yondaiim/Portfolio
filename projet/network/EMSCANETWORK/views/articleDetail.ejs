@@ -1,0 +1,41 @@
+<%- include('./partials/header', {title : "Ajouter un article" , style : "detail" }) %>
+<div class="titre">
+    <h1>Detail sur l'article</h1>
+</div>
+    <main>
+        <% if (locals.article) { %>
+            <article class="article">
+                <h3>
+                    <%= article.title %>
+                </h3>
+                <div class="info">
+                    <p><%= article.author.username %></p>
+                    <p>Date de création: <%= String(article.createdAt).split("GMT")[0] %></p>
+                    <p>Date de modification <%= String(article.updatedAt).split("GMT")[0] %></p>
+                </div>
+                <div class="images">
+                    <img src="<%= article.imageUrl %>" alt="">
+                </div>
+                <p><%= article.content %></p>
+                <div>
+                    <% article.categories.forEach(categorie=> { %>
+                        <span>
+                           <a href="/articles/<%=categorie%>"><%= categorie %></a>
+                        </span>
+                        <% }) %>
+                </div>
+                <% if (locals.connected && locals.user._id.toString()===article.author._id.toString() ) { %>
+                <div class="supmod">
+                    <a href="/article/update/<%= article._id %>">Modifier l'article</a>
+                    <form action="/article/delete/<%= article._id %>" method="post">
+                        <button type="submit">Supprimer l'article</button>
+                    </form>
+                </div>
+ 
+                    <% } %>
+            </article>
+
+            <% } %>
+    </main>
+
+    <%- include('./partials/footer') %>

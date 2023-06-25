@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background-color: #161B22;
+    color: #E8F4F6;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    font-size: 130%;
+    color: #E8F4F6;
+  
+}
+.form {
+    border: 2px solid #75bfce;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 500px;
+    margin: 1rem auto;
+    background-color: #161B22;
+
+}
+strong{
+    color: #a2c7ff;
+}
+.form button{
+    display: flex;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.boutonsupprimer{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.form button:hover{
+    box-shadow: 0px 0px 10px #b95050;
+
+}

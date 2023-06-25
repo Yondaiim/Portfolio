@@ -1,0 +1,24 @@
+<%- include("./partials/header", {title : "Page de connexion" ,style : "profile" })%>
+
+    <div class="titre">
+        <h1>Profile</h1>
+    </div>
+    
+    <div class="form">
+        <% if (locals.user) { %>
+        <h2>Nom d'utilisateur <strong><%= user.username %></strong></h2>
+        <p>Addresse mail: <strong><%= user.email %></strong></p>
+        <small>Date D'inscription <%= user.createdAt.toUTCString() %><br><br></small>
+
+        <form action="/user/profile/delete" method="post">
+           <div class="boutonsupprimer">
+                <button>Supprimer le compte</button>
+           </div> 
+            
+        </form>
+    </div>
+    
+
+
+        <% } %>
+            <%- include("./partials/footer") %>

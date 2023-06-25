@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    background-color: #161B22;
+    color: #E8F4F6;
+}
+h1 {
+    text-align: center;
+}
+.article {
+    width: 500px;
+    padding: 1rem;
+    border: 2px solid #75bfce;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.lienhome a{
+    text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+<%- include('./partials/header', {title : "Page D'acceuil", style : "home"})  %> 
+
+<% if (locals.logout) { %>
+ <div id="logout" style="padding: 0.5rem; text-align: center; background-color: chartreuse;"> <%= locals.logout %> </div>
+<% } %>
+<% if (locals.connected) { %>
+ <h1>Bonjour <%= user.username %> </h1>
+ <% } else { %>
+    <h1>Bonjour Anonyme</h1>
+<% } %>
+
+<main>
+    <% if (locals.articles) { %>
+        <% articles.forEach(article => { %>
+            <article class="article">
+                <h3><%= article.title %> </h3>
+                <p><%= article.content.substring(0, 50).concat("...") %> </p>
+                <div class="lienhome">
+                    <a href="/article/<%= article._id %>">Lire la suite</a>
+                </div>
+            </article>
+        <% }) %>
+    <% } %>
+</main>
+<%- include('./partials/footer')  %> 

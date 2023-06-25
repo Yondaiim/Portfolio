@@ -1,0 +1,35 @@
+<%- include('./partials/header', {title : "Ajouter un article", style : "addpost" }) %>
+
+<div class="titre">
+    <h1>Ajouter un article</h1>
+</div>    
+
+<div class="ajoutarticle">
+    <form action="/article/add" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Titre</label>
+            <input type="text" name="title" id="title" />
+        </div>
+        <div class="form-group">
+            <label for="content">Contenu</label>
+            <textarea name="content" id="content"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="image">Ajouter une image</label>
+            <input type="file" required name="image" >
+        </div>
+        <div class="form-group">
+            <label for="categories">Catégories</label>
+            <input type="text" name="categories" id="categories" placeholder="js,php" />
+        </div>
+        <div class="form-group">
+            <button type="submit">Publier</button>
+        </div>
+        
+    </form>
+</div>
+    
+
+
+    <%- include('./partials/footer') %>
+
